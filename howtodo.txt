@@ -1,9 +1,11 @@
 如何上传？
-1、git add 文件名
+1、git remote add origin git@github.com:GitHub名字/仓库名
+    让本地的仓库（也就是你要上传的文件的文件夹）和GitHub仓库建立联系
+2、git add 文件名
     把要提交的文件传到缓存区
-2、git commit -m'本次提交的说明'
+3、git commit -m'本次提交的说明'
     把缓存区的文件提交到git远程仓库
-3、git push -u orgin master
+4、git push -u orgin master
     把git仓库的文件上传到GitHub
 如何删除仓库中的文件？（本地仓库，git远程仓库，GitHub仓库）
 1、rm -rf 文件名
@@ -11,4 +13,8 @@
 2、git commit -m'本次操作的说明
     把git远程仓库中的文件删除（删除git远程仓库文件）
 3、git push -u origin master
-    把现在远程仓库的内容提交，GitHub会将已有的文件和要提交的文件对比，从而更新文件（包括删除和添加修改）（说明：此时git远程仓库中已经删除了该文件，这步是和GitHub同步的意思，由于git远程仓库中已经没有该文件，所以GitHub也会将该文件删除）
+    把现在远程仓库的内容提交，GitHub会将已有的文件和要提交的文件对比，从而更新
+    文件（包括删除和添加修改）（说明：此时git远程仓库中已经删除了该文件，这步
+    是和GitHub同步的意思，由于git远程仓库中已经没有该文件，所以GitHub也会将该
+    文件删除）
+注：以上所有的操作都是在仓库文件夹中使用的，也就是说，把该文件夹当做本地的仓库
