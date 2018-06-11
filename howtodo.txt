@@ -22,3 +22,4 @@
 的仓库名是指GitHub中的仓库的名字。origin对使用者是透明的，而GitHub中的仓库名是
 可见的。所以git push -u 是把git远程仓库（也就是master）中的内容同步到GitHub的
 远程仓库（也就是origin）然后GitHub会将origin中的文件显示出来。。
+注3：每次更改时也要先git add
