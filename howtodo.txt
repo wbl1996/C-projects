@@ -1,4 +1,4 @@
-如何上传？
+﻿如何上传？
 1、git remote add origin git@github.com:GitHub名字/仓库名
     让本地的仓库（也就是你要上传的文件的文件夹）和GitHub仓库建立联系
 2、git add 文件名
@@ -23,3 +23,8 @@
 可见的。所以git push -u 是把git远程仓库（也就是master）中的内容同步到GitHub的
 远程仓库（也就是origin）然后GitHub会将origin中的文件显示出来。。
 注3：每次更改时也要先git add
+
+
+新增:
+怎样删除与github的联系？
+把当前文件夹中的.git文件删除，如果每一，就设置查看隐藏文件。
