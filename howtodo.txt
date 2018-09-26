@@ -17,6 +17,13 @@
     文件（包括删除和添加修改）（说明：此时git远程仓库中已经删除了该文件，这步
     是和GitHub同步的意思，由于git远程仓库中已经没有该文件，所以GitHub也会将该
     文件删除）
+如何将文件上传到已有的远程仓库？
+1 git pull origin master
+    把远程仓库的内容拉取到本地
+2 将需要上传的文件放到该目录下
+3 git add
+4 git commit
+5 git push -u origin master
 注1：以上所有的操作都是在仓库文件夹中使用的，也就是说，把该文件夹当做本地的仓库
 注2：master是指git远程仓库的名字，origin是指GitHub远程仓库的名字，而建立联系时
 的仓库名是指GitHub中的仓库的名字。origin对使用者是透明的，而GitHub中的仓库名是
